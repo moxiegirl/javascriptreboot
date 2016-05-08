@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+</head>
+<body>
+
+<script type="text/javascript">
+
+  var timesTable = prompt("Enter times table value:", "");
+  var startFrom = prompt("Enter startfrom value:", "");
+
+  manyTimes(parseInt(timesTable),parseInt(startFrom));
+
+  function manyTimes(baseValue, startValue){
+    var loopCounter = startValue;
+    for (; loopCounter <= baseValue; loopCounter++)
+    {
+      result = baseValue * loopCounter;
+      document.write(baseValue + " * " + loopCounter + " = " + result + "<br/>");
+    }
+  }
+
+
+</script>
+
+</body>
+</html>
