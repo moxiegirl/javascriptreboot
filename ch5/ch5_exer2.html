@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/å-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <title>Chapter 5. Example 6</title>
+
+  <script type="text/javascript">
+
+
+  </script>
+</head>
+
+<body>
+
+<script type="text/javascript">
+
+// create an array
+
+var namesArray = new Array();
+var inputName = "";
+
+while((inputName = prompt("Enter a name: ","")) != "")
+{
+  namesArray[namesArray.length] = inputName;
+}
+
+namesArray.sort();
+
+var namesList = namesArray.join("<br/>")
+document.write(namesList);
+
+</script>
+
+</body>
+
+</html>
